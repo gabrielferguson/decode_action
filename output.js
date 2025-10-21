@@ -1,8 +1,33 @@
-//Tue Oct 21 2025 06:00:58 GMT+0000 (Coordinated Universal Time)
+//Tue Oct 21 2025 06:07:45 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-require("../@babel/runtime/helpers/Arrayincludes");
-var e = require("../@babel/runtime/helpers/typeof");
+Array.prototype.includes || Object.defineProperty(Array.prototype, "includes", {
+  value: function (r, e) {
+    if (null == this) {
+      throw new TypeError('"this" is null or not defined');
+    }
+    var t = Object(this),
+      n = t.length >>> 0;
+    if (0 == n) {
+      return !1;
+    }
+    for (var i, o, a = 0 | e, u = Math.max(0 <= a ? a : n - Math.abs(a), 0); u < n;) {
+      if ((i = t[u]) === (o = r) || "number" == typeof i && "number" == typeof o && isNaN(i) && isNaN(o)) {
+        return !0;
+      }
+      u++;
+    }
+    return !1;
+  }
+});
+function _typeof(o) {
+  "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? module.exports = _typeof = function (o) {
+    return typeof o;
+  } : module.exports = _typeof = function (o) {
+    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+  };
+  return _typeof(o);
+}
 (global.webpackJsonp = global.webpackJsonp || []).push([["common/vendor"], {
   "011a": function (e, t) {
     function n() {
